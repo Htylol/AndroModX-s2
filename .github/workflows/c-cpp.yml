@@ -15,7 +15,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: configure
       run: apt install ccache
-      name: build
+
+    - name: build
       run: ./build.sh
 
 
