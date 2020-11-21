@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: configure
-      apt install ccache
+      run: apt install ccache
       run: ./build.sh
 
 
