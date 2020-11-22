@@ -15,9 +15,9 @@
 # Initialization Script
 : ${KERNEL_DIR:=$PWD}
 export PATH=$PATH:$KERNEL_DIR
-export PATH=$PATH:$KERNEL_DIR/../aarch64-linux-android-4.9
-export PATH=$PATH:$KERNEL_DIR/../aarch64-linux-android-4.9/bin
-PATH=$PATH$( find $KERNEL_DIR/../aarch64-linux-android-4.9 -type d -printf ":%p" )
+export PATH=$PATH:$KERNEL_DIR/aarch64-linux-android-4.9
+export PATH=$PATH:$KERNEL_DIR/aarch64-linux-android-4.9/bin
+PATH=$PATH$( find $KERNEL_DIR/aarch64-linux-android-4.9 -type d -printf ":%p" )
 IMAGE=$KERNEL_DIR/arch/arm64/boot/Image.gz-dtb
 WLAN=$KERNEL_DIR/drivers/staging/prima/wlan.ko
 DEFCONFIG=andromodx_defconfig
