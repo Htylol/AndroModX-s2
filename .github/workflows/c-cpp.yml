@@ -38,6 +38,7 @@ jobs:
       run: git clone --recursive https://github.com/Htylol/AndroModX-s2.git -b master
 
     - name: cd kernel
+      run: cp -a aarch64-linux-android-4.9 AndroModX-s2
       run: cd AndroModX-s2
 
     - name: build
